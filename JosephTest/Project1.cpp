@@ -8,7 +8,7 @@ USEFORM("Unit1.cpp", Form1);
 WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
    try
-   {
+   {//bacon
        Application->Initialize();
        Application->CreateForm(__classid(TForm1), &Form1);
        Application->Run();
