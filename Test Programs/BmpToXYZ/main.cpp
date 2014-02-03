@@ -41,7 +41,7 @@ void __fastcall TForm1::btnRunClick(TObject *Sender)
       {
          int c = 0xFFFFFF-(int)pic->Bitmap->Canvas->Pixels[w][h];
          int color = c&0xFF+(c>>8)&0xFF+(c>>16)&0xFF;
-         fprintf(fout,"%d,%d,0,%d\n", w,Height-h,(int)(color*1./0x2FD*dz+min));
+         fprintf(fout,"%d,%d,%f\n", w,Height-h,(color*1./0x2FD*dz+min));
       }
    }
    fclose(fout);
